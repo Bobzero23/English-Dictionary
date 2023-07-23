@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>English Dicionary</title>
 </head>
 
 <body>
-
+    <div class="container">
+        <h1 class="heading">English Dictionary</h1>
+        <input type="text" class="input" id="input" placeholder="search a word">
+        <p class="info-text" id="info-text">Type a word and press enter</p>
+        <div class="meaning-container" id="meaning-container">
+            <p>Word Title: <span class="title" id="title">____</span></p>
+            <p>Meaning: <span class="meaning" id="meaning">____</span></p>
+            <audio src="" controls id="audio"></audio>
+        </div>
+        <div class="error" id="error">Error happened, try again later</div>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
